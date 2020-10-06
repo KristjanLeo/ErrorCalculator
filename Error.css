@@ -1,0 +1,36 @@
+.Title{
+	position: center;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 5px 0px;
+}
+
+.Display{
+	 padding-right: 100%;
+	 padding-bottom: 15%;
+	 text-align: center;
+}
+
+.Buttons{
+	display: grid;
+	grid-gap: 0px;
+}
+.Button:hover{
+	background-color: lightblue;
+}
+
+.ButtonEquals{
+	grid-column-start: 0;
+	grid-column-end: 6;
+	grid-row-start: 0;
+	grid-row-end: 5; 
+}
+.Button{
+	padding: 20px 30px;
+	font-size: 30px;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+}

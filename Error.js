@@ -1,0 +1,5 @@
+var WhatsonDisplay = ""
+
+DisplayText = function(){
+	
+}
