@@ -53,7 +53,7 @@ class Ovissa:
             return Ovissa(new_est, new_uncert)
 
 
-A = Ovissa(2, 0.1)
+A = Ovissa(2.0, 0.1)
 B = Ovissa(13, 4)
 C = Ovissa(3.1, 0.001)
 
