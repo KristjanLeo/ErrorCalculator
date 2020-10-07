@@ -1,7 +1,8 @@
 class Ovissa:
-    def __init__(self, est, uncert):
+    def __init__(self, est, uncert, ms=1):
         self.est = est
         self.uncert = uncert
+        self.ms = 1
 
     def __str__(self):
         return str(self.est)+' ± '+str(self.uncert)
@@ -41,7 +42,7 @@ class Ovissa:
         new_uncert = new_est*(self.uncert/self.est+B.uncert/B.est)
         return Ovissa(new_est, new_uncert)
 
-    def __rdiv(self, r):
+    def __rdiv__(self, r):
         new_est = self.est/r
         new_uncert = self.uncert/r
         return Ovissa(new_est, new_uncert)
@@ -64,3 +65,4 @@ C = Ovissa(3.1, 0.001)
 # print((A+B)*C)
 string = 'A+B'
 print(eval(string))
+print(A+B)
