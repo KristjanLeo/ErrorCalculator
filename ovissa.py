@@ -59,10 +59,10 @@ B = Ovissa(13, 4)
 C = Ovissa(3.1, 0.001)
 
 
-# print(A*B)
-# print(A**5)
-# print(A*B*C)
-# print((A+B)*C)
+print(A*B)
+print(A**5)
+print(A*B*C)
+print((A+B)*C)
 string = 'A+B'
 print(eval(string))
 print(A+B)
